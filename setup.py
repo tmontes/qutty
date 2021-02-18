@@ -8,7 +8,6 @@ import setuptools
 
 ###############################################################################
 
-NAME = "qutty"
 META_PATH = os.path.join("src", "qutty", "__init__.py")
 KEYWORDS = ["gui", "applications"]
 CLASSIFIERS = [
@@ -26,7 +25,8 @@ CLASSIFIERS = [
 INSTALL_REQUIRES = [
     "PyQt5==5.15.2",
     "PyQt5-sip==12.8.1",
-
+    "importlib-metadata==3.4.0",
+    "zipp==3.4.0",
 ]
 EXTRAS_REQUIRE = {
     "docs": [
@@ -72,7 +72,7 @@ def find_meta(meta):
 
 if __name__ == "__main__":
     setuptools.setup(
-        name=NAME,
+        name=find_meta("title"),
         description=find_meta("description"),
         license=find_meta("license"),
         url=find_meta("uri"),

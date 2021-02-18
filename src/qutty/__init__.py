@@ -2,9 +2,9 @@
 QuTTY - A minimal GUI app to test pup.
 """
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 
-__title__ = 'qutty'
+__title__ = 'QuTTY'
 __description__ = 'QuTTY, a minimal GUI app to test pup'
 
 __license__ = 'MIT'
