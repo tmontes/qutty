@@ -30,7 +30,7 @@ class MainWindow(QMainWindow):
         layout.addStretch()
 
         button = QPushButton('Quit')
-        button.clicked.connect(lambda: QApplication.quit())
+        button.clicked.connect(QApplication.quit)
         layout.addWidget(button)
 
         widget = QWidget()
