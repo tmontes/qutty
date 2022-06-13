@@ -21,12 +21,15 @@ CLASSIFIERS = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
 ]
 INSTALL_REQUIRES = [
-    "PyQt5==5.15.2",
-    "PyQt5-sip==12.8.1",
-    "importlib-metadata==3.4.0",
-    "zipp==3.4.0",
+    "importlib-metadata==4.11.4",
+    "PyQt5==5.15.6",
+    "PyQt5-Qt5==5.15.2",
+    "PyQt5-sip==12.10.1",
+    "zipp==3.8.0",
 ]
 EXTRAS_REQUIRE = {
     "docs": [
