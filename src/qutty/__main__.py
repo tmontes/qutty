@@ -7,9 +7,9 @@ import sys
 import importlib_metadata as ilm
 import importlib_resources as ilr
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import (
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QPixmap
+from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QLabel
 )
 
@@ -35,7 +35,7 @@ class MainWindow(QMainWindow):
         logo = QPixmap(str(logo_filename))
         label = QLabel()
         label.setPixmap(logo)
-        layout.addWidget(label, alignment=Qt.AlignCenter)
+        layout.addWidget(label, alignment=Qt.AlignmentFlag.AlignCenter)
 
         button = QPushButton('Quit')
         button.clicked.connect(QApplication.quit)
@@ -54,7 +54,7 @@ def main():
     win = MainWindow()
     win.show()
 
-    app.exec_()
+    app.exec()
 
 
 if __name__ == '__main__':
